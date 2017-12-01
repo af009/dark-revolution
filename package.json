@@ -1,0 +1,19 @@
+{
+    "title": "Dark Revolution",
+    "name": "dark-revolution",
+    "description": "A dark theme based on Brackets Dark.",
+    "version": "1.0.0",
+    "author": "af009 <af09@digidizem.com>",
+    "homepage": "https://github.com/af009/dark-revolution",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/af009/dark-revolution"
+    },
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["theme"]
+}
