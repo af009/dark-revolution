@@ -1,6 +1,6 @@
 /* Define some variables used in multiple places */
 
-@background: #141f1f; 
+@background: #141f1f;
 @foreground: #00e69d;
 
 /* Code Styling */
@@ -9,10 +9,14 @@
 .CodeMirror-scroll {
     background-color: @background;
     color: @foreground;
+
 }
+
+
 
 .CodeMirror-focused .CodeMirror-activeline-background {
     background: #024524;
+
 }
 
 .show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
@@ -23,9 +27,11 @@
     .CodeMirror-gutter-elt {
         background: rgba(0, 0, 0, 0.2);
         color: #fff;
+
     }
     .inline-widget .CodeMirror-gutter-elt {
         color: #767676;
+
     }
 }
 
@@ -34,71 +40,106 @@
 .cm-string-2,
 .cm-hr {
     color: #D08350;
+
 }
 
 .cm-number,
-.cm-attribute,
 .cm-plus {
     color: #00e69d;
+
+
 }
+
+.cm-attribute {
+    color: #00e69d;
+    font-style: italic;
+    font-weight: bolder;
+
+}
+
 
 .cm-def,
 .cm-property {
-    color:  #8E9FFF;
+    color: #8E9FFF;
+
 }
 
 .cm-bracket {
-    color:white;
+    color: #fff;
+
 }
 
 .cm-operator {
-    color:#EC6868;
+    /* color:#EC6868; */
+    color: #fff;
+    font-weight: bold;
+
 }
 
 .cm-m-clike.cm-operator {
-    color:#EC6868;
+    color: #EC6868;
+    font-weight: bold;
+
 }
 
 .cm-m-clike.cm-variable {
-    color:#A5DDEC;
+    color: #A5DDEC;
+    font-weight: bold;
+
 }
 
 .cm-variable,
 .cm-variable-2,
 .cm-variable-3,
-.cm-meta,
- {
-    
-    color:#ED6565;
+.cm-meta {
+    /*//color: @foreground;*/
+    color: #ED6565;
+
 }
 
 .cm-comment {
     color: #4D707D;
+
 }
 
 .cm-minus {
     color: #dc322f;
+
 }
 
 .cm-header {
     color: #d85896;
+
 }
 
 .cm-link {
     color: #b77fdb;
     text-decoration: none;
+
 }
 
 .cm-rangeinfo {
     color: #6c71c4;
+
 }
 
 .cm-keyword,
 .cm-qualifier,
-.cm-builtin,
+.cm-builtin {
+    color: #66b5ff;
+    font-style: italic; 
+}
+
+.cm-keyword {
+
+    font-weight: bold;
+
+}
+
 .cm-tag,
 .cm-quote {
-    color:  #66b5ff;
+    color: #66b5ff;
+
 }
 
 .cm-error {
@@ -116,7 +157,7 @@
 
 
 .CodeMirror-cursor {
-    border-left: 1px solid #00ff00 !important;
+    border-left: 2px solid #00ff00 !important;
 }
 
 .CodeMirror-gutters {
@@ -126,38 +167,48 @@
 
 .CodeMirror-linenumber {
     color: #4D707D;
+
 }
 
 .CodeMirror .CodeMirror-selected {
     background: #333f48;
+    color: #fff;
+
 }
 
 .CodeMirror-focused .CodeMirror-selected {
-    background: #024524 ; 
+    background: #024524;
+    color: #fff;
+
 }
 
 .CodeMirror-matchingbracket,
 .CodeMirror-matchingtag {
     /* Ensure visibility against gray inline editor background */
-    background-color: #2e5c00;
-    color: @foreground !important;
+    /* background-color: #024524 ; */
+    background-color: #024524;
+    color: #fff;
+
+
+    text-shadow: 1px 1px #000;
+
+
 }
+
+.CodeMirror-matchingbracket {
+    background-color: #008000;
+    color: #fff !important;
+    text-shadow: 1px 1px #000;
+    font-weight: bold;
+}
+
 
 .CodeMirror-overwrite .CodeMirror-cursor {
     border-left: none !important;
     border-bottom: 1px solid #fff;
 }
 
-/*
-    CodeMirror's use of descendant selectors for certain styling causes problems when editors are
-    nested because, for items in the inner editor, the left-hand clause in the selector will now
-    match either the actual containing CodeMirror instance *OR* the outer "host" CodeMirror instance.
-    TODO (issue #324): We'll still have problems if editors can be nested more than one level deep,
-    or if any other descendant-selector-driven CM styles can differ between inner & outer editors
-    (potential problem areas include line wrap and coloring theme: basically, anything in codemirror.css
-    that uses a descandant selector where the CSS class name to the left of the space is something
-    other than a vanilla .CodeMirror)
- */
+
 
 .CodeMirror {
     .CodeMirror {
@@ -216,8 +267,11 @@
 .image-view,
 .not-editor {
     background-color: @background;
+
 }
 
 .view-pane .image-view {
     color: @foreground;
+
 }
+
