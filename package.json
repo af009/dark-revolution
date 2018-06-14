@@ -2,7 +2,7 @@
     "title": "Dark Revolution",
     "name": "dark-revolution",
     "description": "A dark theme based on Brackets Dark.",
-    "version": "1.9.0",
+    "version": "1.9.1",
     "author": "af009 <afwebd@yahoo.com>",
     "homepage": "https://github.com/af009/dark-revolution",
     "repository": {
@@ -15,5 +15,5 @@
         "dark": true,
         "addModeClass": true
     },
-    "keywords": ["theme","dark", "css", "javascript", "php"]
+    "keywords": ["theme","dark", "css", "javascript", "php","vue","jsx","react"]
 }
