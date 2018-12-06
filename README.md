@@ -13,7 +13,7 @@ A dark theme based on Brackets Dark.
 # Vue
 ![Alt text](https://github.com/af009/dark-revolution/blob/master/assets/vue.png?raw=true "Vue")
 
-# React/JSX
+# React
 ![Alt text](https://github.com/af009/dark-revolution/blob/master/assets/react.png?raw=true "React")
 
 # PHP/HTML
